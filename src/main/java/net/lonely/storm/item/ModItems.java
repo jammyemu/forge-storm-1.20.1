@@ -13,6 +13,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> ATHETITE_CLUMP = ITEMS.register("athetite_clump", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ROOTED_GINGER = ITEMS.register("rooted_ginger", () -> new Item(new Item.Properties().food(ModFoods.ROOTED_GINGER)));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

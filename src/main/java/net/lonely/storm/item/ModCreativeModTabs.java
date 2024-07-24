@@ -21,7 +21,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.storm_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.ATHETITE_CLUMP.get());
-                        //pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+                        pOutput.accept(ModItems.ROOTED_GINGER.get());
 
                         pOutput.accept(ModBlocks.ATHETITE_BLOCK.get());
 

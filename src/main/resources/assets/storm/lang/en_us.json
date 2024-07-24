@@ -1,6 +1,9 @@
 {
   "item.storm.athetite_clump": "Athetite Clump",
+  "item.storm.rooted_ginger": "Rooted Ginger",
 
-  "creativetab.storm_tab": "Manastorm Reborn"
+  "block.storm.athetite_block": "Athetite Block",
+
+  "creativetab.storm_tab": "Lapidary"
 
 }
