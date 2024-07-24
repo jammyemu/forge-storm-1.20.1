@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.lonely.storm.block.ModBlocks;
 import net.lonely.storm.item.ModCreativeModTabs;
 import net.lonely.storm.item.ModItems;
+import net.lonely.storm.worldgen.biome.ModTerraBlenderAPI;
+import net.lonely.storm.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,6 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 @Mod(StormMod.MOD_ID)
 public class StormMod
@@ -33,6 +36,8 @@ public class StormMod
 
         ModBlocks.register(modEventBus);
 
+        ModTerraBlenderAPI.registerRegions();
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -42,7 +47,7 @@ public class StormMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
