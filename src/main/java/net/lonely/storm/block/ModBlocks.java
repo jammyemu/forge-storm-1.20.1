@@ -1,6 +1,7 @@
 package net.lonely.storm.block;
 
 import net.lonely.storm.StormMod;
+import net.lonely.storm.block.custom.RootedGingerCropBlock;
 import net.lonely.storm.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,6 +22,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ATHETITE_BLOCK = registerBlock("athetite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> ROOTED_GINGER_CROP = BLOCKS.register("rooted_ginger_crop",
+            () -> new RootedGingerCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

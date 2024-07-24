@@ -1,7 +1,9 @@
 package net.lonely.storm.datagen.loot;
 
 import net.lonely.storm.block.ModBlocks;
+import net.lonely.storm.block.custom.RootedGingerCropBlock;
 import net.lonely.storm.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
@@ -13,6 +15,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -37,7 +41,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.END_STONE_SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
         */
+
+        LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.ROOTED_GINGER_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RootedGingerCropBlock.AGE, 3));
+        this.add(ModBlocks.ROOTED_GINGER_CROP.get(), this.createCropDrops(ModBlocks.ROOTED_GINGER_CROP.get(),
+                ModItems.ROOTED_GINGER.get(), ModItems.ROOTED_GINGER.get(), lootitemcondition$builder1));
     }
+
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
         return createSilkTouchDispatchTable(pBlock,
