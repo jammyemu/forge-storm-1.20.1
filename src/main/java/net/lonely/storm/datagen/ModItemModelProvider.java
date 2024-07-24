@@ -21,6 +21,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ATHETITE_CLUMP);
         simpleItem(ModItems.ROOTED_GINGER);
 
+        simpleItem(ModItems.ETHERIUM);
+        simpleItem(ModItems.FLORIUM);
+        simpleItem(ModItems.GEOLIUM);
+        simpleItem(ModItems.ILLOITE);
+        simpleItem(ModItems.KROTEIS);
+        simpleItem(ModItems.ORIBIUM);
+        simpleItem(ModItems.PHOENITE);
+        simpleItem(ModItems.RIDONEITE);
+        simpleItem(ModItems.STARMEAR);
+        simpleItem(ModItems.STRANGERS_DIAMOND);
+        simpleItem(ModItems.THE_LOST);
+        simpleItem(ModItems.THORIUM);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

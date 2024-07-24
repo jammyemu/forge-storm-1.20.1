@@ -22,6 +22,19 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.ATHETITE_CLUMP.get());
                         pOutput.accept(ModItems.ROOTED_GINGER.get());
+                        pOutput.accept(ModItems.ETHERIUM.get());
+                        pOutput.accept(ModItems.FLORIUM.get());
+                        pOutput.accept(ModItems.GEOLIUM.get());
+                        pOutput.accept(ModItems.ILLOITE.get());
+                        pOutput.accept(ModItems.KROTEIS.get());
+                        pOutput.accept(ModItems.ORIBIUM.get());
+                        pOutput.accept(ModItems.PHOENITE.get());
+                        pOutput.accept(ModItems.RIDONEITE.get());
+                        pOutput.accept(ModItems.STARMEAR.get());
+                        pOutput.accept(ModItems.STRANGERS_DIAMOND.get());
+                        pOutput.accept(ModItems.THE_LOST.get());
+                        pOutput.accept(ModItems.THORIUM.get());
+
 
                         pOutput.accept(ModBlocks.ATHETITE_BLOCK.get());
 

@@ -18,6 +18,20 @@ public class ModItems {
     public static final RegistryObject<Item> ROOTED_GINGER = ITEMS.register("rooted_ginger", () -> new ItemNameBlockItem(ModBlocks.ROOTED_GINGER_CROP.get(), new Item.Properties().food(ModFoods.ROOTED_GINGER)));
 
 
+    public static final RegistryObject<Item> ETHERIUM = ITEMS.register("etherium", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FLORIUM = ITEMS.register("florium", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GEOLIUM = ITEMS.register("geolium", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ILLOITE = ITEMS.register("illoite", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KROTEIS = ITEMS.register("kroteis", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORIBIUM = ITEMS.register("oribium", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PHOENITE = ITEMS.register("phoenite", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIDONEITE = ITEMS.register("ridoneite", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STARMEAR = ITEMS.register("starmear", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STRANGERS_DIAMOND = ITEMS.register("strangers_diamond", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THE_LOST = ITEMS.register("the_lost", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THORIUM = ITEMS.register("thorium", () -> new Item(new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
