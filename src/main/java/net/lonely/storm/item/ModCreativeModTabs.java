@@ -38,6 +38,14 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.ATHETITE_BLOCK.get());
 
+                        pOutput.accept(ModBlocks.GRIMWOOD_LOG.get());
+                        pOutput.accept(ModBlocks.GRIMWOOD_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_GRIMWOOD_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_GRIMWOOD_WOOD.get());
+                        pOutput.accept(ModBlocks.GRIMWOOD_PLANKS.get());
+                        pOutput.accept(ModBlocks.GRIMWOOD_SAPLING.get());
+                        pOutput.accept(ModBlocks.GRIMWOOD_LEAVES.get());
+
                     })
                     .build());
 

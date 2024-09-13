@@ -1,3 +1,10 @@
-// 1.20.1	2024-07-24T19:55:28.3555313	Loot Tables
+// 1.20.1	2024-07-24T22:55:29.0645476	Loot Tables
 bde0a21f82ad7a2fd9412c7e82b93e7359762171 data/storm/loot_tables/blocks/athetite_block.json
+bff3a6790836ed73c247c18334db8db888070658 data/storm/loot_tables/blocks/grimwood_leaves.json
+2b8bf04b0921e0715be51bd3c08b4ef14482983a data/storm/loot_tables/blocks/grimwood_log.json
+2599d438085eb8a2601bf021248e75099b1eb89d data/storm/loot_tables/blocks/grimwood_planks.json
+6ad0ff857870505f65cc563d693fde8f8355b450 data/storm/loot_tables/blocks/grimwood_sapling.json
+129b909486447b68adb4407895b2f89ca70381d2 data/storm/loot_tables/blocks/grimwood_wood.json
 107355bd811e50212d72603f5675b0531c27271f data/storm/loot_tables/blocks/rooted_ginger_crop.json
+37e09c240bdc470672610a77a5705c677e72585e data/storm/loot_tables/blocks/stripped_grimwood_log.json
+473e6d8b22e98352e6b2bca6f388d61c6c24dcfa data/storm/loot_tables/blocks/stripped_grimwood_wood.json

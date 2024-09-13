@@ -22,8 +22,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         //this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
                 //.add(ModBlocks.SAPPHIRE_ORE.get()).addTag(Tags.Blocks.ORES);
 
-        //this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                //.add(ModBlocks.ATHETITE_BLOCK.get(),
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.ATHETITE_BLOCK.get());
                         //ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
                         //ModBlocks.SAPPHIRE_ORE.get(),
                         //ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
@@ -44,6 +44,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         //this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 //.add(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.GRIMWOOD_LOG.get())
+                .add(ModBlocks.GRIMWOOD_WOOD.get())
+                .add(ModBlocks.STRIPPED_GRIMWOOD_LOG.get())
+                .add(ModBlocks.STRIPPED_GRIMWOOD_WOOD.get());
 
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.GRIMWOOD_PLANKS.get());
     }
 }

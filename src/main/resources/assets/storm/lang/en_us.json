@@ -18,6 +18,16 @@
 
   "block.storm.athetite_block": "Athetite Block",
 
+  "block.storm.grimwood_planks": "Grimwood Planks",
+  "block.storm.grimwood_log": "Grimwood Log",
+  "block.storm.grimwood_wood": "Grimwood",
+  "block.storm.stripped_grimwood_wood": "Stripped Grimwood",
+  "block.storm.stripped_grimwood_log": "Stripped Grimwood Log",
+  "block.storm.grimwood_sapling": "Grimwood Sapling",
+  "block.storm.grimwood_leaves": "Grimwood Leaves",
+
+
+
   "creativetab.storm_tab": "Lapidary"
 
 }

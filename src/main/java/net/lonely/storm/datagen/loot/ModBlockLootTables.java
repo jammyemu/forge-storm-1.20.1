@@ -46,6 +46,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RootedGingerCropBlock.AGE, 3));
         this.add(ModBlocks.ROOTED_GINGER_CROP.get(), this.createCropDrops(ModBlocks.ROOTED_GINGER_CROP.get(),
                 ModItems.ROOTED_GINGER.get(), ModItems.ROOTED_GINGER.get(), lootitemcondition$builder1));
+
+        this.dropSelf(ModBlocks.GRIMWOOD_LOG.get());
+        this.dropSelf(ModBlocks.GRIMWOOD_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_GRIMWOOD_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_GRIMWOOD_WOOD.get());
+        this.dropSelf(ModBlocks.GRIMWOOD_PLANKS.get());
+        this.dropSelf(ModBlocks.GRIMWOOD_SAPLING.get());
+
+        this.add(ModBlocks.GRIMWOOD_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.GRIMWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
     }
 
 

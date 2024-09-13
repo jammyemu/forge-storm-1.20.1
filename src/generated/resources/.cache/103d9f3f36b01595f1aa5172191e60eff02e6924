@@ -1,3 +1,6 @@
-// 1.20.1	2024-07-24T21:49:35.5597214	Registries
+// 1.20.1	2024-09-13T17:52:49.556587	Registries
+63ec35c501595bb2acff6833f30832a7a0217bc6 data/storm/forge/biome_modifier/add_tree_walnut.json
 3df8d3216e5381ef2935e79772f4bc43d92fe58f data/storm/worldgen/biome/test_biome.json
 a341ae6e00951e8f1f7943fdc9c60e20ab1b358e data/storm/worldgen/biome/test_biome_2.json
+5bd401b07385d1a588283fd67e04b35b34e38d36 data/storm/worldgen/configured_feature/grimwood.json
+fabb7913d79544817bc10524a1039831ee7ffd4c data/storm/worldgen/placed_feature/grimwood_placed.json
